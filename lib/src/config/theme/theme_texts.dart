@@ -4,10 +4,18 @@ import 'package:login_resgistrer/src/config/constants/colors.dart';
 class TTextStyle {
   TTextStyle._();
 
-  static const TextStyle exploraStyle = TextStyle(
+  static const TextStyle description = TextStyle(
     fontFamily: 'Roboto Slab',
-    color: AppColors.white,
-    fontWeight: FontWeight.w600,
-    fontSize: 22,
+    color: AppColors.grey,
+    fontWeight: FontWeight.w500,
+    fontSize: 18,
+    fontStyle: FontStyle.italic,
+  );
+  static const TextStyle welcomeToHome = TextStyle(
+    fontFamily: 'Roboto Slab',
+    color: AppColors.black,
+    fontWeight: FontWeight.w400,
+    fontSize: 30,
+    fontStyle: FontStyle.italic,
   );
 }
