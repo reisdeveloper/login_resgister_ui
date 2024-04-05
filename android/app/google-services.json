@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "196396251521",
+    "project_id": "login-register-ui-749dd",
+    "storage_bucket": "login-register-ui-749dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196396251521:android:a45144c21b7cc4283cd080",
+        "android_client_info": {
+          "package_name": "com.example.login_resgistrer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApDCBnRK2XNINirPDL1nPuyXY7xntSqO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
