@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:login_resgistrer/src/config/theme/theme_texts.dart';
 
 class TText {
-  static const Text explora = Text("Explora");
+  static const Text explora = Text("Explora", style: TTextStyle.exploraStyle);
   static const Text welcomeBack = Text("Welcome back");
   static const Text subTitleWelcome = Text("sign in to access your account");
   static const Text welcomeToHome = Text("Welcome To Home");
