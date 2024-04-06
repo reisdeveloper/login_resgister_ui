@@ -3,7 +3,7 @@ import 'package:login_resgistrer/src/presetation/authentication/auth_screens/sig
 
 class Routes {
   Map<String, Widget Function(BuildContext context)> routes = {
-    NamedRoutes.sigup: (_) => const SignUpAuthScreen(),
+    NamedRoutes.sigup: (_) => const SingInAuthScreen(),
   };
 }
 

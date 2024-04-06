@@ -7,7 +7,7 @@ class AppTheme {
   static ThemeData? appTheme = ThemeData(
     primaryColor: AppColors.purple,
     visualDensity: VisualDensity.adaptivePlatformDensity,
-    scaffoldBackgroundColor: AppColors.greyLight,
+    scaffoldBackgroundColor: AppColors.white,
     fontFamily: 'Roboto Slab',
     buttonTheme: const ButtonThemeData(
       buttonColor: AppColors.purpleLight,

@@ -18,4 +18,17 @@ class TTextStyle {
     fontSize: 30,
     fontStyle: FontStyle.italic,
   );
+
+  static const TextStyle welcomeBack = TextStyle(
+    fontFamily: 'Roboto Slab',
+    color: AppColors.black,
+    fontWeight: FontWeight.w400,
+    fontSize: 30,
+  );
+  static const TextStyle subTitleWelcome = TextStyle(
+    fontFamily: 'Roboto Slab',
+    color: AppColors.black,
+    fontWeight: FontWeight.w300,
+    fontSize: 18,
+  );
 }

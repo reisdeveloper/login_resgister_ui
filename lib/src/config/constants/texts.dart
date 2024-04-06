@@ -2,8 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:login_resgistrer/src/config/theme/theme_texts.dart';
 
 class TText {
-  static const Text welcomeBack = Text("Welcome back");
-  static const Text subTitleWelcome = Text("sign in to access your account");
+  static const Text welcomeBack = Text(
+    "Welcome back",
+    style: TTextStyle.welcomeBack,
+  );
+  static const Text subTitleWelcome = Text(
+    "sign in to access your account",
+    style: TTextStyle.subTitleWelcome,
+  );
   static const Text welcomeToHome = Text(
     "Welcome To Home",
     style: TTextStyle.welcomeToHome,
