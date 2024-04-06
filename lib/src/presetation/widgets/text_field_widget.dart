@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:login_resgistrer/src/config/constants/colors.dart';
 
 class TextFieldWidget extends StatelessWidget {
@@ -6,28 +7,33 @@ class TextFieldWidget extends StatelessWidget {
   final String? labelText;
   final Widget? prefixIcon;
   final TextEditingController controller;
-  final String obscuringCharacter = '•';
+  final String obscuringCharacter;
   final String? Function(String?)? validator;
   final int? minLines;
   final int? maxLines;
-  final bool obscureText = false;
+  final bool obscureText;
   final TextInputType keyboardType;
+  final AutovalidateMode? autovalidateMode;
 
   const TextFieldWidget({
-    super.key,
-    required this.controller,
-    required this.keyboardType,
-    this.validator,
-    this.minLines,
-    this.maxLines,
+    Key? key,
     this.hintText,
     this.labelText,
     this.prefixIcon,
-  });
+    required this.controller,
+    this.obscuringCharacter = '•',
+    this.validator,
+    this.minLines,
+    this.maxLines = 1,
+    this.obscureText = true,
+    required this.keyboardType,
+    this.autovalidateMode,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      autovalidateMode: autovalidateMode,
       controller: controller,
       validator: validator,
       keyboardType: keyboardType,
@@ -36,7 +42,6 @@ class TextFieldWidget extends StatelessWidget {
       maxLines: maxLines,
       decoration: InputDecoration(
         prefixIcon: prefixIcon,
-        fillColor: Colors.blue,
         border: InputBorder.none,
         hintText: hintText,
         hintStyle: const TextStyle(
@@ -65,6 +70,7 @@ class TextFieldWidget extends StatelessWidget {
         errorBorder: const OutlineInputBorder(
           borderRadius: BorderRadius.all(Radius.circular(10.0)),
           borderSide: BorderSide(
+            width: 2,
             color: Colors.red,
           ),
         ),
